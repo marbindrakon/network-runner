@@ -1,0 +1,9 @@
+---
+- name: "aruba: configure and enable access switch port"
+  aruba_config:
+    lines:
+      - no routing
+      - vlan access {{ _vlan_id }}
+      - no shutdown
+    parents: interface {{ port_name }}
+  connection: network_cli

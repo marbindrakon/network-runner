@@ -1,0 +1,7 @@
+---
+- name: "aruba: add VLAN to trunk port"
+  aruba_config:
+    lines:
+      - vlan trunk allowed {{ _vlan_id }}
+    parents: interface {{ port_name }}
+  connection: network_cli
