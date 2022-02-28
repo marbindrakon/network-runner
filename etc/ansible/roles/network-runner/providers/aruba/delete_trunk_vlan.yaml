@@ -1,0 +1,7 @@
+---
+- name: "aruba: remove VLAN from trunk port"
+  aruba_config:
+    lines:
+      - no vlan trunk allowed {{ _vlan_id }}
+    parents: interface {{ port_name }}
+  connection: network_cli

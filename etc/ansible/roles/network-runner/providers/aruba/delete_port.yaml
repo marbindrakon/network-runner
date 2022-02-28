@@ -1,0 +1,8 @@
+---
+- name: "aruba: delete port"
+  aruba_config:
+    lines:
+      - shutdown
+      - routing
+    parents: interface {{ port_name }}
+  connection: network_cli
