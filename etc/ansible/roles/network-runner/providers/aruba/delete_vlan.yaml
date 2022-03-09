@@ -3,4 +3,4 @@
   aruba_config:
     commands:
       - no vlan {{ _vlan_id }}
-  connection: network_cli
+  connection: local

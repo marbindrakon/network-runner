@@ -3,11 +3,11 @@
   aruba_config:
     commands:
       - vlan {{ _vlan_id }}
-  connection: network_cli
+  connection: local
 
 - name: "aruba: set vlan name"
   aruba_config:
     commands:
       - name {{ _vlan_name }}
     parents: vlan {{ _vlan_id }}
-  connection: network_cli
+  connection: local

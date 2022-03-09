@@ -7,4 +7,4 @@
       - vlan trunk allowed {{ _vlan_id }},{{ trunked_vlans|join(',') }}
       - no shutdown
     parents: interface {{ port_name }}
-  connection: network_cli
+  connection: local

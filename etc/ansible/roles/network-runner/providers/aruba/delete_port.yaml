@@ -5,4 +5,4 @@
       - shutdown
       - routing
     parents: interface {{ port_name }}
-  connection: network_cli
+  connection: local

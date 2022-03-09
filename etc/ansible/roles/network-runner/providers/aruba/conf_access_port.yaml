@@ -6,4 +6,4 @@
       - vlan access {{ _vlan_id }}
       - no shutdown
     parents: interface {{ port_name }}
-  connection: network_cli
+  connection: local

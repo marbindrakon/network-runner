@@ -3,4 +3,4 @@
   aruba_command:
     commands:
       - show running-config interface {{ port_name }}
-  connection: network_cli
+  connection: local
